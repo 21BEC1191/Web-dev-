@@ -1,0 +1,239 @@
+body{
+  background-color: rgb(152,118,84,0.3);  
+}
+
+
+
+h1{
+  color:"Brown";
+  margin:0;
+  font-family:"Lucida Handwriting",cursive;
+  font-size: 30px;
+  font-weight:bold;
+}
+h2{
+  color:"Brown";
+  margin:0;
+  font-family:"Lucida Handrwiting",cursive;
+  font size: 20px;
+}
+h3{
+  color:"Brown";
+  margin:0;
+  font-family:"Lucida Handrwiting",cursive;
+  font size: 20px;
+}
+ul{
+  color:"Brown";
+  margin:0;
+  font-family:"Lucida Handrwiting",cursive;
+  font size: 20px;
+}
+ol{
+  color:"Brown";
+  margin:0;
+  font-family:"Lucida Handrwiting",cursive;
+  font size: 20px;
+}
+.baking-tools-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.baking-tool {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.baking-tool img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.baking-tool h2, .baking-tool p {
+  margin: 10px 0;
+}
+.baking-ingredients-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.baking-ingredient {
+  text-align: center;
+  width: 200px;
+  margin: 10px;
+}
+
+.baking-ingredient img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.baking-ingredient h2, .baking-ingredient p {
+  margin: 10px 0;
+}
+.menu-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+
+
+.menu-item {
+  float: left; /* Float the menu items to the left */
+  width: 48%; /* Adjust the width of each item */
+  margin: 10px; /* Add margin around items */
+  font-family:"Lucida Handwriting",cursive;
+}
+.menu-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+.menu-item h3, .menu-item p {
+  margin: 10px 0;
+}
+@media (max-width: 768px) {
+  .baking-ingredient {
+    width: calc(50% - 20px);
+  }
+}
+
+.customer-review {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family:"Lucida Handwriting",cursive;
+}
+.customer-review blockquote {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.customer-review cite {
+  font-weight: bold;
+}
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .baking-ingredient {
+    width: calc(50% - 20px);
+  }
+}
+.special-offers {
+  padding: 20px;
+  background-color: #a8217b;
+  border: 2px solid #f7d7c4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family:"Lucida Handwriting",cursive;
+}
+
+.special-offers h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ff6600;
+}
+
+.special-offers .offer {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.special-offers .offer:before {
+  content: "SALE!";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transform: rotate(-20deg);
+}
+
+.special-offers .offer h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ff6600;
+}
+
+.special-offers .offer p {
+  color: #666;
+}
+
+/* Sparkly Banners Animation */
+@keyframes sparkly {
+  0% { filter: brightness(100%); }
+  50% { filter: brightness(120%); }
+  100% { filter: brightness(100%); }
+}
+
+.special-offers .offer:before {
+  animation: sparkly 1s infinite;
+}
+.contact-info {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20px;
+  font-family:"Lucida Handwriting",cursive;
+}
+
+.contact-info h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #4d0d37;
+}
+
+.contact-info p {
+  color: #4d0d37;
+  margin-bottom: 10px;
+}
+
+.contact-info address {
+  font-style: normal;
+  color: #4d0d37;
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #4d0d37;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: #4d0d37;
+}
